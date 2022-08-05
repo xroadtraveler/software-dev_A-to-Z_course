@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p {
+                color: blue;
+                font-family: arial;
+            }
+
+            h1 {
+                color: blue;
+                font-family: arial;
+                text-align: center;
+                background-color: darkgray;
+            }
+
+            h2 {
+                color: blue;
+                font-family: arial
+            }
+        </style>
+    </head>
+    <title>Software Development from A to Z</title>
+    <body>
+        <h1>Software Development Paths</h1>
+        <h2>Web Development</h2>
+        <p>You should understand the basics of web development.</p>
+
+        <script>
+            var firstHeading = document.querySelector("h1");
+            var secondHeading = document.querySelector("h2");
+            var paragraph = document.querySelector("p");
+
+            function applyDarkTheme() {
+                firstHeading.style.color = "white";
+                secondHeading.style.color = "white";
+                paragraph.style.color = "white";
+
+                document.body.style.backgroundColor = "black";
+            }
+
+            function applyLightTheme () {
+                firstHeading.style.color = "blue";
+                secondHeading.style.color = "blue";
+                paragraph.style.color = "blue";
+
+                document.body.style.backgroundColor = "white";
+            }
+
+
+
+        </script>
+
+        <button onclick="applyDarkTheme()">Dark Theme</button>
+        <button onclick="applyLightTheme()">Light Theme</button>
+    </body>
+</html>
